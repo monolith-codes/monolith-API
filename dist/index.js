@@ -35,7 +35,7 @@ const port = 8000;
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)({
-    origin: 'http://terpsmansion.com',
+    origin: ['http://terpsmansion.com', 'https://terpsmansion.com'],
 }));
 app.post('/terpsmansion/maintenancelogin', (0, express_validator_1.body)('password').notEmpty(), (req, res) => {
     const result = (0, express_validator_1.validationResult)(req);

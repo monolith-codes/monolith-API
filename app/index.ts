@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: 'http://terpsmansion.com',
+    origin: ['http://terpsmansion.com', 'https://terpsmansion.com'],
   }),
 );
 
